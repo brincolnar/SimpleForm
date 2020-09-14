@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@423&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form>
+      <div class="basic-info">
+        <h2>Let's Start With Basic information:</h2>
+        <div class="progress">
+          <div class="step-1"></div>
+          <div class="step-1"></div>
+        </div>
+        <div id="firstName-field">
+          <input placeholder="Enter first name" type="text" class="" required />
+        </div>
+        <div id="lastName-field">
+          <input placeholder="Enter last name" type="text" class="" required />
+        </div>
+        <button class="next">Next</button>
+      </div>
+      <div class="basic-info inactive">
+        <h2>Your email and username:</h2>
+        <div class="progress">
+          <div class="step-2"></div>
+          <div class="step-2"></div>
+        </div>
+        <div id="email-field">
+          <input
+            placeholder="Enter your email"
+            type="email"
+            class=""
+            required
+          />
+        </div>
+        <div id="username-field">
+          <input placeholder="Enter username" type="text" class="" required />
+        </div>
+        <button class="next">Finish</button>
+      </div>
+      <div id="final" class="basic-info inactive">
+        <h2 id="welcome-banner"></h2>
+        <h4>Your information:</h4>
+        <br />
+        <ul class="information-ul">
+          <li id="firstName-item" class="info-item">first name: Brin</li>
+          <li id="lastName-item" class="info-item">last name: Colnar</li>
+          <li id="email-item" class="info-item">
+            email: shogunishere@gmail.com
+          </li>
+        </ul>
+      </div>
+    </form>
+    <script src="./bundle.js"></script>
+  </body>
+</html>

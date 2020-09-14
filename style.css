@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  height: 100vh;
+  background-color: #c7c7c7;
+  display: flex;
+  transition: background-color 0.5s ease;
+  position: relative;
+}
+
+@keyframes example {
+  0% {
+    bottom: 0px;
+    border: 1px solid red;
+  }
+
+  50% {
+    bottom: 25px;
+    border: 1px solid red;
+  }
+
+  100% {
+    bottom: 0px;
+    border: 1px solid red;
+  }
+}
+
+.animation {
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+@keyframes finalAnimation {
+  0% {
+    top: -600px;
+  }
+
+  0% {
+    top: -300px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+.finalAnimation {
+  animation-name: finalAnimation;
+  animation-duration: 0.4s;
+}
+
+.basic-info {
+  text-align: center;
+  background-color: white;
+  height: 45vh;
+  width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+
+.basic-info h2,
+.basic-info-2 h2 {
+  margin: 3rem 0;
+  font-size: 2em;
+}
+
+#firstName-field,
+#lastName-field,
+#email-field,
+#username-field {
+  position: relative;
+  margin: 2.5rem auto;
+  height: 2.6rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 70%;
+}
+
+#firstName-field input,
+#lastName-field input,
+#email-field input,
+#username-field input {
+  width: 87%;
+  height: 90%;
+  border: none;
+  margin-top: 2px;
+}
+
+#firstName-field input:focus,
+#lastName-field input:focus,
+#email-field input:focus,
+#username-field input:focus {
+  outline: none;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+}
+
+.step-1,
+.step-2 {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  margin: 0 1rem;
+}
+
+.next {
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem;
+  width: 100px;
+  background-color: black;
+  color: white;
+}
+
+.next:hover {
+  background-color: gray;
+  width: 106px;
+  cursor: pointer;
+}
+
+.inactive {
+  display: none;
+}
+
+.information-ul {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: start;
+}
+.info-item {
+  list-style: circle;
+}
